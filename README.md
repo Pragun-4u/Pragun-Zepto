@@ -1,5 +1,3 @@
-# React + TypeScript + Vite
-
 # Made by Pragun K.
-# Stack used
-## React, TypeScript, Tailwind
+Tech Stack used
+## React, TypeScript, Tailwind CSS
