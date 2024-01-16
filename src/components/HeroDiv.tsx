@@ -12,6 +12,7 @@ const HeroDiv = () => {
       (dropdownUser) => dropdownUser.id !== user.id
     );
     setUsers(updatedDropdown.slice(0, 10));
+    setinput("");
   };
 
   const handleDeleteUser = (user: User) => {
@@ -62,9 +63,14 @@ const HeroDiv = () => {
               <div
                 key={user.id}
                 style={{ minWidth: "100px" }}
-                className="flex items-center mx-2"
+                className="bg-gray-300 my-1 flex items-center mx-2"
               >
-                <p>{user.name}</p>
+                <img
+                  src={user.profilePhoto}
+                  className="h-6 w-6 "
+                  alt={`Profile Pic of ${user.name} `}
+                />
+                <p className="mx-1">{user.name}</p>
                 <img
                   onClick={() => handleDeleteUser(user)}
                   src="/cross.svg"
