@@ -63,7 +63,7 @@ const HeroDiv = () => {
               <div
                 key={user.id}
                 style={{ minWidth: "100px" }}
-                className="bg-gray-300 my-1 flex items-center mx-2"
+                className="bg-gray-300 rounded-lg my-2 flex items-center mx-2"
               >
                 <img
                   src={user.profilePhoto}
@@ -74,7 +74,7 @@ const HeroDiv = () => {
                 <img
                   onClick={() => handleDeleteUser(user)}
                   src="/cross.svg"
-                  className="h-5 w-5 hover:bg-gray-200 border rounded-lg mx-1"
+                  className="h-5 w-5 cursor-pointer hover:bg-gray-200 border rounded-lg mx-1"
                 />
               </div>
             );
